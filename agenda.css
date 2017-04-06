@@ -1,0 +1,29 @@
+body {
+  padding: 3em;
+}
+
+table {
+  width: 100%;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+/* mensagem ao lado de cada campo - oculta */
+.pure-form input+span {
+  display: none;
+}
+
+/* classe de erro para os campos */
+.pure-form input.error,
+.pure-form input.error:focus {
+  border-color: #e60000;
+  background: #ffe6e6;
+}
+
+/* truque - exibir a mensagem ao lado 
+quando o campo tiver a classe error */
+.pure-form input.error+span {
+  display: inline-block;  
+}

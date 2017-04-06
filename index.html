@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+  
+  <form class="pure-form pure-form-aligned">
+    <fieldset>
+      <legend>Agenda</legend>
+
+      <div class="pure-control-group">
+        <label for="name">Nome</label>
+        <input id="name" type="text" placeholder="Nome">
+        <span class="pure-form-message-inline">Este campo é obrigatório.</span>
+      </div>
+
+      <div class="pure-control-group">
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="Email">
+        <span class="pure-form-message-inline">Este campo é obrigatório.</span>
+      </div>
+
+      <div class="pure-controls">
+        <button type="submit" class="pure-button pure-button-primary">Adicionar</button>
+      </div>
+    </fieldset>
+  </form>
+  
+  <hr>
+  
+  <table class="pure-table">
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Email</th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td colspan="3">Não existem dados registrados!</td>
+          </tr>
+          
+          <!-- <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john@doe.com</td>
+          </tr>
+
+          <tr>
+              <td>2</td>
+              <td>Mary Doe</td>
+              <td>mary@doe.com</td>
+          </tr> -->
+      </tbody>
+  </table>
+
+  <script src="agenda.js"></script>
+</body>
+</html>
